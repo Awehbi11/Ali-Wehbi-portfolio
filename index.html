@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- AOS Animate on Scroll Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+  body {
+  background-color: #e8edf3;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+
+    header {
+      background: linear-gradient(90deg, #007BFF, #0056b3);
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: pumpDanceOnce 1.8s ease-out forwards;
+  margin-bottom: 0.5rem;
+}
+
+
+
+   nav {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffde59;
+  color: #0056b3;
+  transform: scale(1.05);
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      animation: fadeInUp 1s ease both;
+    }
+
+    h2 {
+      color: #fff;
+      background: linear-gradient(90deg, #007BFF, #0056b3);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: #007BFF;
+      margin-bottom: 0.5rem;
+    }
+
+    .project {
+      background: linear-gradient(to right, #ffffff, #e6f0ff);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #007BFF;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(90deg, #007BFF, #0056b3);
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  @keyframes pumpDanceOnce {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(1.1) rotate(-3deg);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(0.95) rotate(3deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(-2deg);
+  }
+  70% {
+    transform: scale(1.02) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    
+<h1><span data-aos="fade-down" data-aos-delay="100">Full Stack Developer</span> <span data-aos="fade-up" data-aos-delay="300">Portfolio</span></h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      
+
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact me</a>
+      <a href="#work">Work Experience</a>
+      <a href="#languages">Languages</a>
+
+    </nav>
+  </header>
+
+<div style="text-align: center; margin-top: 2rem;" data-aos="zoom-in">
+  <img src="ali_img.jpg" alt="Kareem Kobeissi" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+</div>
+
+
+
+  <div class="container">
+<section id="about" data-aos="fade-up">
+      <h2>About Me:</h2>
+      <p>
+        I am a <strong>Computer Science student</strong> aged 20 and a <strong>full stack developer</strong> fulfilled in my programming career. I am working hard to become an expert in <strong>Artificial Intellegance</strong> and <strong>Python</strong>. I am also actively helping <strong>freelancers</strong> in many projects, contributing to both <strong>frontend</strong> and <strong>backend</strong> tasks.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education:</h2>
+      <p><strong>Bachelor of Science in Computer Science</strong></p>
+      <p><strong>University:</strong> Lebanese International University (LIU)</p>
+      <p><strong>Location:</strong> Nabatieh, Lebanon</p>
+      <p><strong>Year:</strong> 2022 - 2025</p>
+      <p><strong>Actual GPA:</strong> 3.5 / 4.0</p>
+    </section>
+
+<section id="projects" data-aos="fade-right">
+
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project 1: University Attendnace Managment system Using Face Recognition</h3>
+        <p> Built using PHP, HTML , CSS , Python , FastAPI, VS Code, etc....</p>
+        <a href="https://github.com/Awehbi11/Face-Recognition-Attendance-System" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 2: HangMan Game.</h3>
+        <p> Built using Python</p>
+  <a href="https://github.com/Awehbi11/codealpha_task1_HangmanGame" target="_blank">View on Github</a>
+      </div>
+
+      
+      <div class="project">
+        <h3>Project 3: Boat Rental Website.</h3>
+        <p> Built using PHP, CSS, HTML, JS, XAMPP and VS Code</p>
+  <a href="https://github.com/Awehbi11/BoatRental_Website" target="_blank">View on Github</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 4: E-Commerce (clothes)</h3>
+        <p> Built using PHP, PhpMyAdmin, XAMPP, CSS , HTML , Js.</p>
+  <a href="https://github.com/Awehbi11/E-Commerce-Clothes-" target="_blank">View on Github</a>
+      </div>
+
+       <div class="project">
+        <h3>Project 5: Restaurent Menu</h3>
+        <p> Built using PHP, PhpMyAdmin, XAMPP, CSS , HTML , Js.</p>
+  <a href="https://github.com/Awehbi11/Restaurant-Menu" target="_blank">View on Github</a>
+      </div>
+    </section>
+
+<section id="skills" data-aos="fade-left">
+      <h2>Skills</h2>
+      
+        <li><strong>PHP / JS / HTML / CSS:</strong> Building responsive, dynamic apps with frontend-backend integration, sessions, admin/user sides .</li>
+        <li><strong>C#:</strong> Windows Forms apps with .NET, e.g., a Student Management System with 18 forms.</li>
+        <li><strong>Python:</strong> Backend for graduation project with FastAPI, connected with (PHP,MYSQL,HTML).</li>
+        <li><strong>Proficient Languages:</strong>
+          
+            <li>Java: Strong in OOP & Data Structures (LinkedList, Stack, Queue)</li>
+           
+            <li>Python: Backend APIs and scripts using FastAPI</li>
+            <li>C#: .NET apps with solid syntax mastery</li>
+            <li><strong>Digital Marketing:</strong> Experience with Snapchat Ads, Meta Ads, TikTok campaigns, SEO/SEM, Google Analytics.</li>
+
+
+         
+        </li>
+     
+      
+
+      
+    </section>
+  
+
+  
+
+
+    <section id="work" data-aos="fade-up">
+  <h2>Work Experience</h2>
+
+  <div class="project">
+    <h3><strong>Digital Marketing Specialist</strong></h3>
+    <p><strong>Location:</strong> Kuwait City</p>
+    <p><strong>Duration:</strong> Jan 2025 – Feb 2025</p>
+    
+      <li>Launched and optimized advertising campaigns on <strong>Snapchat</strong>, <strong>Meta</strong>, and <strong>TikTok</strong> to increase user engagement and conversion.</li>
+      <li>Applied SEO/SEM strategies and audience targeting techniques to enhance visibility and reach.</li>
+      <li>Utilized <strong>Google Analytics</strong> to track performance and extract insights, improving campaign ROI significantly.</li>
+      <li>Refined marketing strategies to boost both online presence and brand interaction.</li>
+    
+  </div>
+
+  <div class="project">
+    <h3><strong>Python Developer – Code Alpha</strong></h3>
+    <p><strong>Location:</strong> Remote</p>
+    <p><strong>Duration:</strong> Oct 2024 – Dec 2024</p>
+    
+      <li>Built Python-based applications and collaborated on code structure and improvements.</li>
+      <li>Conducted code reviews and quality assurance to ensure performance and reliability.</li>
+      <li>Enhanced user experiences by debugging, optimizing logic, and refining interfaces.</li>
+    
+  </div>
+
+  <div class="project">
+    <h3><strong>Freelance Web & Mobile Development Collaborations</strong></h3>
+    <p><strong>Period:</strong> Fall & Spring 2025</p>
+   
+      <li>Worked with multiple freelancers on <strong>web  projects</strong> using <strong>PHP</strong></li>
+      <li>Developed full-stack features, including UI/UX, API integration, and backend logic.</li>
+      
+  
+  </div>
+
+  
+</section>
+
+
+<section id="languages">
+  <h2>Languages</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+
+    <!-- Arabic -->
+    <div style="flex: 1 1 250px; background: linear-gradient(to right, #f9f9f9, #e6f0ff); padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+      <h3 style="color: #007BFF;">Arabic</h3>
+<p>🟢 <strong>Native Speaker</strong></p>
+<span style="padding: 0.3rem 0.7rem; background-color: #28a745; color: white; border-radius: 20px;">Label: Native</span>
+
+      <br />
+<button onclick="toggleDetails('arabic-details', this)" style="margin-top: 0.5rem; padding: 0.4rem 1rem; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">View</button>
+      <div id="arabic-details" style="display: none; margin-top: 1rem; text-align: left; background-color: #eef4ff; padding: 0.7rem; border-radius: 8px;">
+        Fluent in both <strong>Modern Standard Arabic</strong> and <strong>Lebanese dialect</strong>. Used for personal, academic, and professional communication.
+      </div>
+    </div>
+
+    <!-- English -->
+    <div style="flex: 1 1 250px; background: linear-gradient(to right, #f9f9f9, #e6f0ff); padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+      <h3 style="color: #007BFF;">English</h3>
+      <p>🟡 <strong>Fluent</strong></p>
+<span style="padding: 0.3rem 0.7rem; background-color: #ffc107; color: black; border-radius: 20px;">Label: Professional</span>
+      <br />
+<button onclick="toggleDetails('english-details', this)" style="margin-top: 0.5rem; padding: 0.4rem 1rem; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">View</button>
+      <div id="english-details" style="display: none; margin-top: 1rem; text-align: left; background-color: #eef4ff; padding: 0.7rem; border-radius: 8px;">
+        Excellent proficiency in speaking, writing, and understanding. Used in <strong>technical documentation</strong>, <strong>university coursework</strong>, and <strong>client communication</strong>.
+      </div>
+    </div>
+
+    <!-- French -->
+    <div style="flex: 1 1 250px; background: linear-gradient(to right, #f9f9f9, #e6f0ff); padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+      <h3 style="color: #007BFF;">French</h3>
+      <p>🟠 <strong>Intermediate</strong></p>
+<span style="padding: 0.3rem 0.7rem; background-color: #fd7e14; color: white; border-radius: 20px;">Label: Conversational</span>
+      <br />
+<button onclick="toggleDetails('french-details', this)" style="margin-top: 0.5rem; padding: 0.4rem 1rem; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">View</button>
+      <div id="french-details" style="display: none; margin-top: 1rem; text-align: left; background-color: #eef4ff; padding: 0.7rem; border-radius: 8px;">
+        Able to carry conversations and understand French in everyday settings. Continuing to improve via <strong>online learning</strong> and <strong>language exchanges</strong>.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:awehbi142@gmail.com">awehbi142@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ali-wehbi-90a4a1278/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BI4%2B%2Fu4JLSYe6bc%2FHtIS7Fw%3D%3D" target="_blank">Awehbi11</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Awehbi11" target="_blank">Ali Wehbi</a></p>
+      <p><strong>Phone:</strong> +961 78 819 370</p>
+      <p><strong>Address:</strong> Nabatieh, Lebanon</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Ali | Full Stack Developer</p>
+  </footer>
+ <script>
+  function toggleDetails(id, button) {
+    const box = document.getElementById(id);
+    if (box.style.display === "none" || box.style.display === "") {
+      box.style.display = "block";
+      button.textContent = "Hide";
+    } else {
+      box.style.display = "none";
+      button.textContent = "View";
+    }
+  }
+</script>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // animation only happens once on scroll
+  });
+</script>
+
+</body>
+</html>
